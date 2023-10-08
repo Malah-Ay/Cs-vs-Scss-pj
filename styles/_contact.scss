@@ -1,0 +1,44 @@
+@import "./color";
+@import "./mixins";
+@import "./modules";
+
+.form-container{
+    width: 100&;
+    height: 90vh;
+    .form-area{
+        height: 100%;
+        width: 100%;
+        @include flex;
+        .images{
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 150px;
+            }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: right;
+            width: 50%;
+
+            input{
+                padding: 5px 0;
+                border-radius: 5px;
+                border: 1px solid orange;
+                text-align: end;
+            }
+            label{
+                font-style: italic;
+                font-weight: bolder;
+            }
+            button {
+                @include button;
+                padding: 10px 20px;
+            
+            }
+        }
+
+    }
+}

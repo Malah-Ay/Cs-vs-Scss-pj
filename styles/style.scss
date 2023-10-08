@@ -1,0 +1,18 @@
+@import "./color";
+@import "./mixins";
+@import "./modules";
+@import "./header";
+@import "./section";
+@import "./info-sec";
+@import "./contact";
+@import "./footer";
+
+
+// main tasks
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}

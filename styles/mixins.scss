@@ -1,0 +1,41 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin flex2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@mixin box-shadow2 {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+@mixin mobile{
+    @media (max-width:760px){
+        @content;
+    }
+}
+
+@mixin button{
+  border: none;
+  color: gray;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bolder;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  &:hover {
+    transform: scale(0.9);
+    transition: 500ms;
+  }
+}

@@ -1,0 +1,57 @@
+@import "./color";
+@import "./mixins";
+@import "./modules";
+
+
+footer{
+    background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+    width: 100%;
+    .footer-area{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     .contact{
+        @include flex;
+        width: 80%;
+        height: 200px;
+        border-bottom: 1px solid;
+        span{
+            color: black;
+
+        }
+
+     }   
+     .footer-info{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        .social-media{
+            line-height: 25px;
+            p{
+                white-space:nowrap;
+                span{
+                    color: white;
+                }
+            }
+            
+        }
+        .logo{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            a{
+                color: black;
+                font-size: 20px;
+            }
+
+        }
+        .images{
+            img {
+                width: 100px;
+                
+            }
+        }
+    }
+    }
+}

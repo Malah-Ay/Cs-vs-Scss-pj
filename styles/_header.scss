@@ -1,0 +1,18 @@
+@import "./color";
+@import "./mixins";
+@import "./modules";
+
+nav {
+  @include flex;
+  @include box-shadow;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+
+  .navigation {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    a {
+      @extend %a;
+    }
+  }
+}

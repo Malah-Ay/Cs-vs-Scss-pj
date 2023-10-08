@@ -1,0 +1,35 @@
+@import "./color";
+@import "./mixins";
+@import "./modules";
+
+.info-container {
+  .info {
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(
+      45deg,
+      #fa8bff 0%,
+      #2bd2ff 52%,
+      #2bff88 90%
+    );
+    border-radius: 10px;
+    @include flex;
+    @include mobile {
+      flex-direction: column;
+    }
+    .info-sec {
+      align-items: center;
+      text-align: center;
+      h1 {
+        color: #364a5e;
+      }
+      p {
+        color: white;
+        margin: 20px 0;
+      }
+      .btn {
+        @include button;
+      }
+    }
+  }
+}
